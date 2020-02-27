@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation'
+import Lomake from './components/Lomake';
+import Etusivu from './components/Etusivu';
+import Aiheet from './components/Aiheet';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+    <div className="container">
       <header>
         <h1>Oppimispäiväkirja</h1>
       </header>
@@ -12,12 +17,15 @@ function App() {
         <Navigation />
       </nav>
       <main>
-        <switch>
-          
-        </switch>
+        <Switch>
+        <Route path="/" exact component={Etusivu} />
+        <Route path="/topics" exact component={Aiheet} />
+        <Route path="/add" exact component={Lomake} />
+        </Switch>
       </main>
       <footer></footer>
     </div>
+    </Router>
   );
 }
 
