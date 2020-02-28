@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
 import Lomake from './components/Lomake';
 import Etusivu from './components/Etusivu';
 import AiheetBox from './components/AiheetBox';

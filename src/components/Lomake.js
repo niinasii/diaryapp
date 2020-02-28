@@ -45,30 +45,30 @@ export default class Lomake extends Component {
                                     <input type="number" name="timetomaster" value={this.state.timetomaster} onChange={this.timetomasterMuuttunut} />
                                 </td></tr>
                             <tr><td>
-                                <label htmlFor="title">Time to spent (h): </label>
+                                <label htmlFor="timetospent">Time to spent (h): </label>
                             </td><td>
                                     <input type="number" name="timetospent" value={this.state.timetospent} onChange={this.timetospentMuuttunut} />
                                 </td></tr>
                             <tr><td>
-                                <label htmlFor="title">Source: </label>
+                                <label htmlFor="source">Source http://</label>
                             </td><td>
                                     <input type="text" name="source" value={this.state.source} onChange={this.sourceMuuttunut} />
                                 </td></tr>
                             <tr><td>
-                                <label htmlFor="title">Learning date start: </label>
+                                <label htmlFor="learningdatestart">Learning date start: </label>
                             </td><td>
-                                    <input type="text" name="learningdatestart" value={this.state.learningdatestart} onChange={this.learningdatestartMuuttunut} />
+                                    <input type="date" name="learningdatestart" value={this.state.learningdatestart} onChange={this.learningdatestartMuuttunut} />
                                 </td></tr>
                             <tr><td>
-                                <label htmlFor="title">In progress: </label>
+                                <label htmlFor="inprogress">In progress: </label>
                             </td><td>
                                     Kyllä: <input className="radio" type="radio" name="inprogress" value="true" onChange={this.inprogressMuuttunut} checked={this.state.radio_on === true} />
                                     Ei: <input className="radio" type="radio" name="inprogress" value="false" onChange={this.inprogressMuuttunut} checked={this.state.radio_on === false} />
                                 </td></tr>
                             <tr><td>
-                                <label htmlFor="title">Completion date: </label>
+                                <label htmlFor="completiondate">Completion date: </label>
                             </td><td>
-                                    <input type="text" name="completiondate" value={this.state.completiondate} onChange={this.completiondateMuuttunut} />
+                                    <input type="date" name="completiondate" value={this.state.completiondate} onChange={this.completiondateMuuttunut} />
                                 </td></tr>
                         </tbody>
                     </table>

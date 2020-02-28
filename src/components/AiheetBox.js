@@ -17,6 +17,12 @@ export default class AiheetBox extends Component {
         });
     }
 
+    // lisääAihe = (newtopic) => {
+    //     luoAihe(newtopic, () => {
+    //         this.haeJaPäivitä();
+    //     });
+    // }
+
     render() {
         return (
             <section>

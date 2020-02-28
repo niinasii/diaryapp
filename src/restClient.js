@@ -5,7 +5,16 @@ function haeAiheet(callback) {
     return axios.get(apiURL)
         .then(function (lista) {
             callback(lista.data);
-        })
+        });
 };
 
-export {haeAiheet}
+function luoAihe(newtopic, callback) {
+    axios.post(apiURL, newtopic)
+    .then(function (response) {
+        console.dir(response);
+        callback(response.status);
+    });
+};
+
+
+export {haeAiheet, luoAihe}
