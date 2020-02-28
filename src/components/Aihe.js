@@ -10,7 +10,8 @@ export default class Aihe extends Component {
                  <tr><td>Time spent:</td><td>{this.props.timespent} h</td></tr>
                  <tr><td>Source: </td><td>{this.props.source}</td></tr>
                  <tr><td>Learning start date:</td><td>{this.props.learningdatestart}</td></tr>
-                 <tr><td>In progress:</td><td>{this.props.inprogress}</td></tr>
+                 <tr><td>In progress:</td><td>{this.props.inprogress}</td></tr> 
+                 {/* boolean datatyyppi kannassa */}
                  <tr><td>Completion date:</td><td>{this.props.completiondate}</td></tr>
             </tbody>     
         );
