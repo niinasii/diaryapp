@@ -18,7 +18,6 @@ export default class Lomake extends Component {
         console.log("Nappia klikattu");
     }
 
-
     render() {
         return (
             <section>

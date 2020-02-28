@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation'
 import Lomake from './components/Lomake';
 import Etusivu from './components/Etusivu';
-import Aiheet from './components/Aiheet';
+import AiheetBox from './components/AiheetBox';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <main>
         <Switch>
         <Route path="/" exact component={Etusivu} />
-        <Route path="/topics" exact component={Aiheet} />
+        <Route path="/topics" exact component={AiheetBox} />
         <Route path="/add" exact component={Lomake} />
         </Switch>
       </main>

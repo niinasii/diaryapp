@@ -61,3 +61,8 @@ button:hover {
   width: 150px;
   margin-top: 8px;
 }
+
+#aihelistaus {
+  text-align: left;
+  margin-left: 15%;
+}
